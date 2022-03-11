@@ -9,16 +9,31 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body class="bg-zinc-800 text-white">
-    <header class="flex justify-between h-16 bg-zinc-900 content-center container px-40">
+    <header class="flex flex-row justify-between h-16 bg-zinc-900 content-center container px-40">
             <div>[logo]</div>
-            <ul class="flex justify-between w-2/4 mr-2">
-                <button class="rounded-full ... bg-teal-400 h-10 w-48 self-center text-white
-                               hover:bg-zinc-800 hover:border-4 hover:border-teal-200
-                               active:bg-zinc-800 active:outline-teal-200">Projecten</button>
-                <button>Contact</button>
-                <button>Over Mij</button>
+            <ul class="flex justify-between w-3/5 mr-2">
+                <a href="projects" class="self-center duration-75 ease-out ...">
+                    <button class="rounded-full ... bg-teal-400 h-10 w-48 text-white
+                          hover:bg-zinc-800 hover:border-4 hover:border-teal-200
+                          active:bg-zinc-800 active:outline-teal-200">Projecten
+                    </button>
+                </a>
+                <a href="contact" class="self-center">
+                    <button class="rounded-full ... bg-teal-400 h-10 w-48 text-white
+                          hover:bg-zinc-800 hover:border-4 hover:border-teal-200
+                          active:bg-zinc-800 active:outline-teal-200">Contact
+                    </button>
+                </a>
+                <a href="about-me" class="self-center">
+                    <button class="rounded-full ... bg-teal-400 h-10 w-48 text-white
+                          hover:bg-zinc-800 hover:border-4 hover:border-teal-200
+                          active:bg-zinc-800 active:outline-teal-200">Projecten
+                    </button>
+                </a>
             </ul>
     </header>
-        <div class="font-sans text-gray-900 antialiased">
-            {{ $slot }}
-        </div>
+    <div class="font-sans text-gray-900 antialiased">
+        {{ $slot }}
+    </div>
+</body>
+</html>
