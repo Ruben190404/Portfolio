@@ -17,13 +17,16 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/projects', ['App\Http\Controllers\ProjectsController', 'index']);
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/about-me', function () {
-    return view( 'about-me');
-});
+Route::get('/projects', ['App\Http\Controllers\ProjectsController', 'projectOpen']);
+
+Route::get('/about-me', ['App\Http\Controllers\ProjectsController', 'aboutmeOpen']);
+
+Route::get('/contact', ['App\Http\Controllers\ProjectsController', 'contactOpen']);
+
+Route::get('/donate', ['App\Http\Controllers\ProjectsController', 'donateOpen']);
+
 require __DIR__.'/auth.php';
