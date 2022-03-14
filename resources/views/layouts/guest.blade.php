@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body class="flex flex-col bg-zinc-800 text-white h-screen">
-    <header class="flex flex-row justify-between h-16 bg-zinc-900 content-center container px-40">
-        <div>[logo]</div>
-        <ul class="flex justify-between w-3/5 mr-2">
+    <header class="flex flex-row justify-between py-3.5 bg-zinc-900 content-center container px-40">
+        <a href="/"><img src="">[logo]</a>
+        <ul class="flex justify-between w-3/5 mr-2 flex md:flex-0">
             <a href="projects" class="self-center">
                 <button class="rounded-full ... bg-teal-400 h-10 w-48 text-white
                           hover:bg-zinc-800 hover:border-4 hover:border-teal-200
@@ -38,8 +38,8 @@
     <footer class="text-center flex flex-col h-full justify-end">
         <div class="text-base"> Copyright © 2022 Ruben luteijn. All Rights Reserved</div><br>
         <a href="donate" class="self-center">
-            <button class="rounded-full ... bg-teal-400 h-7 w-40 text-white text-s
-                          hover:bg-teal-600">Donate
+            <button class="rounded-full ... bg-teal-400 h-8 w-40 text-white text-s
+                          hover:bg-teal-600 mb-4">Donate
             </button>
         </a>
     </footer>
