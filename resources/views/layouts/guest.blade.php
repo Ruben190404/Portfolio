@@ -7,8 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik&display=swap" rel="stylesheet">
 </head>
-<body class="flex flex-col bg-zinc-800 text-white h-screen">
+<body class="flex flex-col bg-zinc-800 text-white h-screen font-sans" style="font-family: 'Rubik', sans-serif;">
     <header class="flex flex-row justify-between py-3.5 bg-zinc-900 content-center container px-40">
         <a href="/"><img src="">[logo]</a>
         <ul class="flex justify-between w-3/5 mr-2 flex md:flex-0">
