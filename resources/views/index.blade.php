@@ -1,10 +1,8 @@
 <x-guest-layout>
 <div>
-    <section>
-        <div class="typewriter">
-            <div class="typewriter-text">Welcome op mijn portfolio site.</div>
-        </div>
-    </section>
+    <h1 class="text-7xl mt-5" style="font-family: 'Monoton', cursive;">
+        Welkom
+    </h1>
 </div>
 
 
