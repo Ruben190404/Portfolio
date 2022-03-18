@@ -1,13 +1,13 @@
 <x-guest-layout>
-<section>
-    <h1 class="text-7xl mt-8 flex justify-center" style="font-family: 'Monoton', cursive;">
+<section class="bg-zinc-700 w-2/5 h-auto p-16 rounded-3xl items-center">
+    <h1 class="text-7xl flex justify-center" style="font-family: 'Monoton', cursive;">
         Welkom
     </h1>
     <div class="flex flex-col self-center items-center mt-8">
         <h1 class="self-center ">
             Hallo, ik ben Ruben Luteijn.
         </h1>
-        <p class="w-1/3 text-center">
+        <p class="text-center">
             Ik ben <?php
             //date in mm/dd/yyyy format; or it can be in other formats as well
             $birthDate = "4/19/2004";
