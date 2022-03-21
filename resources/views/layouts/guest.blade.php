@@ -16,6 +16,12 @@
     <header class="flex flex-row justify-between py-3.5 bg-zinc-900 content-center container px-40">
         <a href="/"><img class="w-14 h-auto" src="images/logo.png"></a>
         <ul class="flex justify-between w-3/5 flex md:flex-0">
+            <a href="/" class="self-center">
+                <button class="rounded-full ... bg-teal-400 h-10 w-48 text-white
+                          hover:bg-zinc-800 hover:border-4 hover:border-teal-200
+                          active:bg-zinc-800 active:outline-teal-200">Home
+                </button>
+            </a>
             <a href="projects" class="self-center">
                 <button class="rounded-full ... bg-teal-400 h-10 w-48 text-white
                           hover:bg-zinc-800 hover:border-4 hover:border-teal-200
@@ -26,12 +32,6 @@
                 <button class="rounded-full ... bg-teal-400 h-10 w-48 text-white
                           hover:bg-zinc-800 hover:border-4 hover:border-teal-200
                           active:bg-zinc-800 active:outline-teal-200">Contact
-                </button>
-            </a>
-            <a href="about-me" class="self-center">
-                <button class="rounded-full ... bg-teal-400 h-10 w-48 text-white
-                          hover:bg-zinc-800 hover:border-4 hover:border-teal-200
-                          active:bg-zinc-800 active:outline-teal-200">Over Mij
                 </button>
             </a>
         </ul>
