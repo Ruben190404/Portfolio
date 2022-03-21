@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Project;
 use Illuminate\Http\Request;
 
 class ProjectsController extends Controller
@@ -11,9 +12,11 @@ class ProjectsController extends Controller
     }
 
     public function projectOpen(){
-        $projects = \App\Models\Project::get();
+        $projects = Project::where('active', 1)->get();
 
-        return view('projects');
+        return view('projects', [
+            'projects' => $projects,
+        ]);
     }
 
     public function contactOpen(){
