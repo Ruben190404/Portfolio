@@ -46,7 +46,7 @@
                                                  ?> Ruben luteijn. All Rights Reserved</div>
         <a href="donate" class="self-center">
             <button class="rounded-full ... bg-teal-400 h-8 w-40 text-white text-s
-                          hover:bg-teal-600 mb-4">Donate
+                          hover:bg-teal-600 mb-4">Doneer
             </button>
         </a>
     </footer>

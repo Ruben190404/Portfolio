@@ -36,7 +36,7 @@
                     </a>
                 </div>
                 <div class="justify-center">
-                    By reading this you agree to give me all your money.
+                    Door dit te lezen stemt u ermee in mij al uw geld te geven.
                 </div>
             </section>
         </div>

@@ -11,6 +11,8 @@ class ProjectsController extends Controller
     }
 
     public function projectOpen(){
+        $projects = \App\Models\Project::get();
+
         return view('projects');
     }
 
