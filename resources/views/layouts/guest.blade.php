@@ -12,9 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik&display=swap" rel="stylesheet">
     <link rel="icon" href="images/icon.png">
 </head>
-<body class="flex flex-col bg-zinc-800 text-white h-screen font-sans" style="font-family: 'Rubik', sans-serif;">
-    <header class="flex flex-row justify-between py-3.5 bg-zinc-900 content-center px-40">
-        <a href="/"><img class="w-14 h-auto" src="images/logo.png"></a>
+<body class="flex flex-col h-screen bg-gray-100 font-sans" style="font-family: 'Rubik', sans-serif;">
+    <header class="flex flex-row justify-between bg-white py-3.5 content-center px-40 shadow-lg">
+        <a href="/"><img class="w-14 h-auto" src="images/icon.png"></a>
         <ul class="flex justify-between w-3/5 flex md:flex-0">
             <a href="/" class="self-center">
                 <button class="rounded-full ... bg-teal-400 h-10 w-48 text-white
