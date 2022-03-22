@@ -1,6 +1,6 @@
 <x-guest-layout>
     <div class="flex justify-center mt-8">
-        <section class="bg-gray-200 w-2/5 h-auto p-16 rounded-3xl shadow-lg">
+        <section class="bg-white w-2/5 h-auto p-16 rounded-3xl shadow-lg">
             <h1 class="text-7xl flex justify-center" style="font-family: 'Monoton', cursive;">
                 Welkom
             </h1>

@@ -4,7 +4,7 @@
     </h1>
     <section class="w-4/5 h-96 flex ml-auto mt-8 mb-4 flex-wrap">
         @foreach($projects AS $project)
-            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-200 w-full sm:w-1/2 md:w-1/3">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white w-full sm:w-1/2 md:w-1/3">
                 <img class="w-full" src="/images/projectsHP/{{$project->picture}}">
                 <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">{{$project->title}}</div>
