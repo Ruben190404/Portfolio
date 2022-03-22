@@ -13,7 +13,7 @@
     <link rel="icon" href="images/icon.png">
 </head>
 <body class="flex flex-col bg-zinc-800 text-white h-screen font-sans" style="font-family: 'Rubik', sans-serif;">
-    <header class="flex flex-row justify-between py-3.5 bg-zinc-900 content-center container px-40">
+    <header class="flex flex-row justify-between py-3.5 bg-zinc-900 content-center px-40">
         <a href="/"><img class="w-14 h-auto" src="images/logo.png"></a>
         <ul class="flex justify-between w-3/5 flex md:flex-0">
             <a href="/" class="self-center">
