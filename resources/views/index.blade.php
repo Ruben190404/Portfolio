@@ -1,6 +1,6 @@
 <x-guest-layout>
-    <div class="flex justify-center mt-8">
-        <section class="bg-white w-2/5 h-auto p-16 rounded-3xl shadow-lg">
+    <div class="flex justify-center mt-28">
+        <section class="bg-white w-2/5 h-auto p-16 shadow-lg">
             <h1 class="text-7xl flex justify-center" style="font-family: 'Monoton', cursive;">
                 Welkom
             </h1>
@@ -24,7 +24,7 @@
                     Momenteel doe ik de opleiding Software-Development op Landstede MBO.
                     Sinds ik met mijn opleiding ben begonnen heb ik al veel kennis opgedaan.
                     Ik heb leren programmeren met verschillende programmeertalen/frameworks.
-                    Waaronder: HTML, CSS, JavaScript, PHP, Laravel, Bootstrap, Tailwind CSS enSQL.
+                    Waaronder: HTML, CSS, JavaScript, PHP, Laravel, Bootstrap, Tailwind CSS en SQL.
                     Verdere hobbies van mij zijn gamen.
                 </p>
             </div>

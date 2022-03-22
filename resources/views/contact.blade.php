@@ -3,18 +3,19 @@
         Contact
     </h1>
     <div class="flex flex-row justify-around mt-8">
-        <section class="bg-white rounded-3xl w-1/3 shadow-lg"> {{--contact info--}}
+        <section class="bg-white w-1/3 shadow-lg">
             <div>
-                <div class="">Contacteer Mij</div> {{--contacteer mij--}}
-                <div class="">Om met mij contact op te nemen gebruik één van deze middelen of vul het formulier in.</div> {{--vul formulier in--}}
-                <div class=""><img src=""><a href="https://www.linkedin.com/in/ruben-luteijn-52471b220/">https://www.linkedin.com/in/ruben-luteijn-52471b220/</a></div> {{--linkedin--}}
-                <div class=""><img src="">+033 6 12390947</div> {{--telefoon nummer--}}
-                <div class=""><img src=""><a href="mailto: luteijnruben@gmail.com">luteijnruben@gmail.com</a></div> {{--email--}}
+                <div class="text-4xl">Contacteer Mij</div>
+                <div class="text-xl">Om met mij contact op te nemen gebruik één van deze middelen of vul het formulier in.</div>
+                <div class="text-xl"><img src=""><a href="https://www.linkedin.com/in/ruben-luteijn-52471b220/">https://www.linkedin.com/in/ruben-luteijn-52471b220/</a></div> {{--linkedin--}}
+                <div class="text-xl"><img src="">+033 6 12390947</div>
+                <div class="text-xl"><img src=""><a href="mailto: luteijnruben@gmail.com">luteijnruben@gmail.com</a></div>
             </div>
         </section>
-        <section class="bg-white shadow-lg rounded-3xl w-1/3"> {{--contact form met naam, email, telefoon nummer en korte tekst--}}
-            <form class="flex flex-col items-center">
-                <label for="fname">Voornaam:</label>
+        <section class="bg-white shadow-lg w-1/3">
+            <div>Vul formulier in voor contact</div>
+            <form class="flex flex-col ml-8">
+                <label for="fname" class="text-gray-700 text-lg font-bold">Voornaam:</label>
                     <input type="text" id="fname" name="fname" placeholder="Voornaam..." class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-medium focus:border-indigo-500 focus:outline-none w-1/2"><br>
                 <label for="lname">Achternaam:</label>
                     <input type="text" id="lname" name="lname" placeholder="Achternaam..." class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-medium focus:border-indigo-500 focus:outline-none w-1/2"><br>
