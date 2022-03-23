@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\donation;
 use App\Models\Project;
 use Illuminate\Http\Request;
 
@@ -20,6 +21,8 @@ class ProjectsController extends Controller
     }
 
     public function contactOpen(){
+
+
         return view('contact');
     }
 
@@ -28,6 +31,10 @@ class ProjectsController extends Controller
     }
 
     public function donateOpen(){
-        return view('donate');
+        $donateMethod = donation::all();
+
+        return view('donate', [
+            'donate' => $donateMethod,
+        ]);
     }
 }

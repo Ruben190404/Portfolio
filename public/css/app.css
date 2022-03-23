@@ -608,17 +608,11 @@ select {
 .left-0 {
   left: 0px;
 }
-.bottom-0 {
-  bottom: 0px;
-}
 .z-0 {
   z-index: 0;
 }
 .z-50 {
   z-index: 50;
-}
-.float-left {
-  float: left;
 }
 .mx-auto {
   margin-left: auto;
@@ -634,8 +628,8 @@ select {
 .-ml-px {
   margin-left: -1px;
 }
-.mt-28 {
-  margin-top: 7rem;
+.mt-16 {
+  margin-top: 4rem;
 }
 .mt-8 {
   margin-top: 2rem;
@@ -657,9 +651,6 @@ select {
 }
 .mt-6 {
   margin-top: 1.5rem;
-}
-.ml-auto {
-  margin-left: auto;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
@@ -697,26 +688,20 @@ select {
 .-mr-2 {
   margin-right: -0.5rem;
 }
-.mt-20 {
-  margin-top: 5rem;
+.mr-1 {
+  margin-right: 0.25rem;
 }
-.mt-16 {
-  margin-top: 4rem;
+.mr-0\.5 {
+  margin-right: 0.125rem;
 }
-.ml-24 {
-  margin-left: 6rem;
+.mr-0 {
+  margin-right: 0px;
 }
-.ml-32 {
-  margin-left: 8rem;
+.mr-px {
+  margin-right: 1px;
 }
-.ml-36 {
-  margin-left: 9rem;
-}
-.ml-40 {
-  margin-left: 10rem;
-}
-.mr-auto {
-  margin-right: auto;
+.mb-16 {
+  margin-bottom: 4rem;
 }
 .block {
   display: block;
@@ -745,26 +730,26 @@ select {
 .h-20 {
   height: 5rem;
 }
-.h-96 {
-  height: 24rem;
-}
 .h-8 {
   height: 2rem;
 }
 .h-16 {
   height: 4rem;
 }
+.h-96 {
+  height: 24rem;
+}
 .h-12 {
   height: 3rem;
+}
+.h-10 {
+  height: 2.5rem;
 }
 .h-screen {
   height: 100vh;
 }
 .h-full {
   height: 100%;
-}
-.h-10 {
-  height: 2.5rem;
 }
 .h-4 {
   height: 1rem;
@@ -805,11 +790,14 @@ select {
 .w-1\/3 {
   width: 33.333333%;
 }
-.w-16 {
-  width: 4rem;
+.w-12 {
+  width: 3rem;
 }
 .w-1\/2 {
   width: 50%;
+}
+.w-3\/4 {
+  width: 75%;
 }
 .w-36 {
   width: 9rem;
@@ -829,20 +817,8 @@ select {
 .w-6 {
   width: 1.5rem;
 }
-.w-1\/4 {
-  width: 25%;
-}
-.w-12 {
-  width: 3rem;
-}
-.w-3\/4 {
-  width: 75%;
-}
-.w-2\/3 {
+.w-4\/6 {
   width: 66.666667%;
-}
-.w-96 {
-  width: 24rem;
 }
 .max-w-sm {
   max-width: 24rem;
@@ -929,9 +905,6 @@ select {
 .justify-evenly {
   justify-content: space-evenly;
 }
-.justify-items-center {
-  justify-items: center;
-}
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -944,9 +917,6 @@ select {
 }
 .self-center {
   align-self: center;
-}
-.justify-self-center {
-  justify-self: center;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -973,9 +943,6 @@ select {
 }
 .border {
   border-width: 1px;
-}
-.border-0 {
-  border-width: 0px;
 }
 .border-t {
   border-top-width: 1px;
@@ -1054,9 +1021,6 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(238 242 255 / var(--tw-bg-opacity));
 }
-.bg-no-repeat {
-  background-repeat: no-repeat;
-}
 .fill-current {
   fill: currentColor;
 }
@@ -1071,9 +1035,6 @@ select {
 }
 .p-2 {
   padding: 0.5rem;
-}
-.p-0 {
-  padding: 0px;
 }
 .px-4 {
   padding-left: 1rem;
@@ -1404,14 +1365,6 @@ select {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
-.hover\:no-underline:hover {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
-}
-.hover\:outline-none:hover {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
 .focus\:z-10:focus {
   z-index: 10;
 }
@@ -1466,10 +1419,6 @@ select {
 .focus\:text-gray-500:focus {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-.focus\:no-underline:focus {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
 }
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
@@ -1564,10 +1513,6 @@ select {
     margin-left: 1.5rem;
   }
 
-  .sm\:ml-auto {
-    margin-left: auto;
-  }
-
   .sm\:block {
     display: block;
   }
@@ -1582,10 +1527,6 @@ select {
 
   .sm\:h-20 {
     height: 5rem;
-  }
-
-  .sm\:w-1\/2 {
-    width: 50%;
   }
 
   .sm\:w-1\/3 {
@@ -1639,14 +1580,6 @@ select {
 }
 @media (min-width: 768px) {
 
-  .md\:block {
-    display: block;
-  }
-
-  .md\:w-1\/3 {
-    width: 33.333333%;
-  }
-
   .md\:w-64 {
     width: 16rem;
   }
@@ -1676,12 +1609,6 @@ select {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-}
-@media (min-width: 1280px) {
-
-  .xl\:mt-28 {
-    margin-top: 7rem;
   }
 }
 
