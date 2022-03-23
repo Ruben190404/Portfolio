@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <h1 class="text-7xl flex justify-center mt-6" style="font-family: 'Monoton', cursive;">
+    <h1 class="text-4xl sm:text-5xl md:text-7xl flex justify-center mt-6 shrink w-auto h-auto" style="font-family: 'Monoton', cursive;">
         Projecten
     </h1>
     <section class="w-4/5 h-auto flex mx-auto mt-8 flex-wrap justify-evenly">

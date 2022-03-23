@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <h1 class="text-7xl flex justify-center mt-4" style="font-family: 'Monoton', cursive;">
+    <h1 class="text-4xl sm:text-5xl md:text-7xl  flex justify-center mt-4" style="font-family: 'Monoton', cursive;">
         Contact
     </h1>
     <div class="flex flex-row justify-around mt-3">

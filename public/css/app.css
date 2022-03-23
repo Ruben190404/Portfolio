@@ -838,6 +838,9 @@ select {
 .shrink-0 {
   flex-shrink: 0;
 }
+.shrink {
+  flex-shrink: 1;
+}
 .flex-grow {
   flex-grow: 1;
 }
@@ -1155,6 +1158,10 @@ select {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .font-medium {
   font-weight: 500;
@@ -1577,6 +1584,16 @@ select {
   .sm\:text-right {
     text-align: right;
   }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 @media (min-width: 768px) {
 
@@ -1598,6 +1615,11 @@ select {
 
   .md\:border-l {
     border-left-width: 1px;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 }
 @media (min-width: 1024px) {

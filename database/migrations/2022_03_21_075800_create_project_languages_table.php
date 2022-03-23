@@ -17,7 +17,6 @@ class CreateProjectLanguagesTable extends Migration
             $table->id();
             $table->integer('projectId');
             $table->integer('languageId');
-            $table->timestamps();
         });
     }
 
