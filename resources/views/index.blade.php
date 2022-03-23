@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <div class="flex justify-center mt-28">
+    <div class="flex justify-center mt-16">
         <section class="bg-white w-2/5 h-auto p-16 shadow-lg">
             <h1 class="text-7xl flex justify-center" style="font-family: 'Monoton', cursive;">
                 Welkom
