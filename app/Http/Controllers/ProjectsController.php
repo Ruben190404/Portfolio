@@ -34,7 +34,7 @@ class ProjectsController extends Controller
         $donateMethod = donation::all();
 
         return view('donate', [
-            'donate' => $donateMethod,
+            'donateMethod' => $donateMethod,
         ]);
     }
 }
