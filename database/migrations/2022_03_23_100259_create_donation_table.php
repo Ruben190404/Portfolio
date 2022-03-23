@@ -13,7 +13,7 @@ class CreateDonationTable extends Migration
      */
     public function up()
     {
-        Schema::create('donation', function (Blueprint $table) {
+        Schema::create('donations', function (Blueprint $table) {
             $table->id();
             $table->string('method');
             $table->longText('link');
