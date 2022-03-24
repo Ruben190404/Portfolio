@@ -5,11 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Project extends Model
+class Language extends Model
 {
     use HasFactory;
-
-    public function languages(){
-        return $this->belongsToMany(Language::class, 'project_languages');
-    }
 }
