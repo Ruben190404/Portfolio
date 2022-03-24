@@ -21,12 +21,20 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/projects', ['App\Http\Controllers\ProjectsController', 'projectOpen']);
+Route::get('/projects', ['App\Http\Controllers\RoutesController', 'projectOpen']);
 
-Route::get('/about-me', ['App\Http\Controllers\ProjectsController', 'aboutmeOpen']);
+Route::get('/about-me', ['App\Http\Controllers\RoutesController', 'aboutmeOpen']);
 
-Route::get('/contact', ['App\Http\Controllers\ProjectsController', 'contactOpen']);
+Route::get('/contact', ['App\Http\Controllers\RoutesController', 'contactOpen']);
 
-Route::get('/donate', ['App\Http\Controllers\ProjectsController', 'donateOpen']);
+Route::get('/donate', ['App\Http\Controllers\RoutesController', 'donateOpen']);
+
+Route::get('/Adashboard', ['App\Http\Controllers\RoutesController', 'AdashboardOpen']);
+
+Route::get('/projectAdmin', ['App\Http\Controllers\RoutesController', 'PaOpen']);
+
+Route::get('/contactAdmin', ['App\Http\Controllers\RoutesController', 'CaOpen']);
+
+Route::get('/languageAdmin', ['App\Http\Controllers\RoutesController', 'LaOpen']);
 
 require __DIR__.'/auth.php';

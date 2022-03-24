@@ -6,7 +6,7 @@ use App\Models\Donation;
 use App\Models\Project;
 use Illuminate\Http\Request;
 
-class ProjectsController extends Controller
+class RoutesController extends Controller
 {
     public function indexOpen(){
         return view('index');
@@ -36,5 +36,21 @@ class ProjectsController extends Controller
         return view('donate', [
             'donateMethod' => $donateMethod,
         ]);
+    }
+
+    public function AdashboardOpen(){
+        return view('Adashboard');
+    }
+
+    public function PaOpen(){
+        return view('projectAdmin');
+    }
+
+    public function CaOpen(){
+        return view('contactAdmin');
+    }
+
+    public function LaOpen(){
+        return view('languageAdmin');
     }
 }

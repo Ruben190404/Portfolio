@@ -802,6 +802,15 @@ select {
 .w-6 {
   width: 1.5rem;
 }
+.w-96 {
+  width: 24rem;
+}
+.w-3\/6 {
+  width: 50%;
+}
+.w-1\/6 {
+  width: 16.666667%;
+}
 .max-w-sm {
   max-width: 24rem;
 }
