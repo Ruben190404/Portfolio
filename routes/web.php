@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/welcome', function () {
+    return view('welcome');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
@@ -29,12 +33,15 @@ Route::get('/contact', ['App\Http\Controllers\RoutesController', 'contactOpen'])
 
 Route::get('/donate', ['App\Http\Controllers\RoutesController', 'donateOpen']);
 
-Route::get('/Adashboard', ['App\Http\Controllers\RoutesController', 'AdashboardOpen']);
+Route::get('/admin/projects', ['App\Http\Controllers\AdminProjectsController', 'index'])
+    ->middleware(['auth'])
+    ->name('admin.projects.list');
 
-Route::get('/projectAdmin', ['App\Http\Controllers\RoutesController', 'PaOpen']);
+Route::get('/admin/projects/edit/{project}', ['App\Http\Controllers\AdminProjectsController', 'edit'])
+    ->middleware(['auth'])
+    ->name('admin.projects.edit');
 
-Route::get('/contactAdmin', ['App\Http\Controllers\RoutesController', 'CaOpen']);
-
-Route::get('/languageAdmin', ['App\Http\Controllers\RoutesController', 'LaOpen']);
+Route::post('/admin/projects/edit/{project}', ['App\Http\Controllers\AdminProjectsController', 'update'])
+    ->middleware(['auth']);
 
 require __DIR__.'/auth.php';

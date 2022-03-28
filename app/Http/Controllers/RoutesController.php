@@ -39,32 +39,4 @@ class RoutesController extends Controller
             'donateMethod' => $donateMethod,
         ]);
     }
-
-    public function AdashboardOpen(){
-        return view('Adashboard');
-    }
-
-    public function PaOpen(){
-        $projects = Project::where('active', 1)->get();
-
-        return view('projectAdmin', [
-            'projects' => $projects,
-        ]);
-    }
-
-    public function CaOpen(){
-        $contacts = Contact::all();
-
-        return view('contactAdmin', [
-            'contacts' => $contacts,
-        ]);
-    }
-
-    public function LaOpen(){
-        $languages = Language::all();
-
-        return view('languageAdmin', [
-            'languages' => $languages,
-        ]);
-    }
 }
