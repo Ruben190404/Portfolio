@@ -44,4 +44,7 @@ Route::get('/admin/projects/edit/{project}', ['App\Http\Controllers\AdminProject
 Route::post('/admin/projects/edit/{project}', ['App\Http\Controllers\AdminProjectsController', 'update'])
     ->middleware(['auth']);
 
+Route::delete('/admin/projects/delete/{project}', ['App\Http\Controllers\AdminProjectsController', 'destroy'])
+    ->middleware(['auth'])->name('admin.projects.delete');
+
 require __DIR__.'/auth.php';

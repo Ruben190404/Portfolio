@@ -37,6 +37,14 @@
                                     <td>
                                         <a href="{{ route('admin.projects.edit', ['project' => $project]) }}">Bewerken</a>
                                     </td>
+                                    <td>
+                                        <form action="{{ route('admin.projects.delete', ['project'  => $project]) }}" method="post">
+                                            @method('DELETE')
+                                            @csrf
+                                            <input type="hidden" name="id" value="{{ $project->id }}">
+                                            <button type="submit">Verwijderen</button>
+                                        </form>
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>

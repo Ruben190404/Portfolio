@@ -29,24 +29,27 @@ class AdminProjectsController extends Controller
      ]);
     }
 
-    public function update(Project $project, Project_language $project_language,Request $request) {
+    public function update(Project $project, Request $request) {
+        // project opslaan
         $project->title = $request->input('title');
         $project->description = $request->input('description');
-
         if($request->hasFile('image')) {
-            $image = $request->file('image');
-            $filename = $image->getClientOriginalName();
-            $image->move(public_path('images/services'), $filename);
-            $project->picture = $request->file('image')->getClientOriginalName();
+            $project->picture = $request->file('image')->store('projects');
         }
-
-        $project_language->project_id = $request->input('id');
-        $project_language->language_id = $request->input('language');
-
-
-        $project_language->save();
         $project->save();
+
+        // talen opslaan
+        $project->languages()->sync($request->input('languages'));
+
+        // terug sturen naar overzichtspagina
         return redirect()->route('admin.projects.list')->with('status', 'Project updated successfully');
 
+    }
+
+    public function destroy(Project $project) {
+        $project->languages()->delete();
+        $project->delete();
+
+        return redirect()->route('admin.projects.list')->with('status', 'Project deleted successfully');
     }
 }
