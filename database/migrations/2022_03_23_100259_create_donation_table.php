@@ -17,6 +17,7 @@ class CreateDonationTable extends Migration
             $table->id();
             $table->string('method');
             $table->longText('link');
+            $table->timestamps();
         });
     }
 

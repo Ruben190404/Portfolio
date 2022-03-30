@@ -5,7 +5,7 @@
     <section class="w-4/5 h-auto flex mx-auto mt-8 flex-wrap justify-evenly">
         @foreach($projects AS $project)
             <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white w-full sm:w-1/3 md:w-1/4 mr-px mb-16">
-                <img class="w-full" src="/images/projectsHP/{{$project->picture}}">
+                <img class="w-full" src="{{ asset('storage/' . $project->picture) }}">
                 <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">{{$project->title}}</div>
                     <p class="text-gray-700 text-base">

@@ -16,7 +16,16 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                     <x-nav-link :href="route('admin.projects.index')" :active="request()->routeIs('dashboard')">
-                        Projects
+                        Projecten
+                    </x-nav-link>
+                    <x-nav-link :href="route('admin.languages.index')" :active="request()->routeIs('dashboard')">
+                        Talen
+                    </x-nav-link>
+                    <x-nav-link :href="route('admin.contacts.index')" :active="request()->routeIs('dashboard')">
+                        Contacten
+                    </x-nav-link>
+                    <x-nav-link :href="route('admin.donations.index')" :active="request()->routeIs('dashboard')">
+                        Donatie Middelen
                     </x-nav-link>
                 </div>
             </div>

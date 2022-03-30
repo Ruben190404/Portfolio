@@ -46,7 +46,6 @@ class AdminProjectsController extends Controller
         return redirect(route('admin.projects.index'))->with('status', 'Project created');
     }
 
-
     public function edit(Project $project) {
         $langs = Language::all();
 

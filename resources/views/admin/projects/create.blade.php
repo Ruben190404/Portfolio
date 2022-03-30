@@ -11,7 +11,7 @@
                 <div class="p-6 bg-white border-b border-gray-200">
                     <form action="{{ route('admin.projects.store') }}" method="post" enctype="multipart/form-data" class="mx-auto flex flex-col mb-2">
                         @csrf
-                        <input type="hidden" name="id"">
+                        <input type="hidden" name="id">
                         <input type="text" name="title" placeholder="Titel" class="mb-2">
                         <input type="text" name="description" placeholder="Beschrijving" class="mb-2">
                         <input type="file" name="image" class="mb-2">

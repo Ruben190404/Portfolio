@@ -37,5 +37,16 @@ Route::resource('/admin/projects', \App\Http\Controllers\AdminProjectsController
     ->middleware(['auth'])
     ->names('admin.projects');
 
+Route::resource('/admin/languages', \App\Http\Controllers\AdminLanguagesController::class)
+    ->middleware(['auth'])
+    ->names('admin.languages');
+
+Route::resource('/admin/contacts', \App\Http\Controllers\AdminContactsController::class)
+    ->middleware(['auth'])
+    ->names('admin.contacts');
+
+Route::resource('/admin/donations', \App\Http\Controllers\AdminDonationsController::class)
+    ->middleware(['auth'])
+    ->names('admin.donations');
 
 require __DIR__.'/auth.php';
