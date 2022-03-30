@@ -826,6 +826,9 @@ select {
 .w-3\/5 {
   width: 60%;
 }
+.w-1\/4 {
+  width: 25%;
+}
 .min-w-full {
   min-width: 100%;
 }
@@ -1666,6 +1669,16 @@ select {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:px-96 {
+    padding-left: 24rem;
+    padding-right: 24rem;
+  }
+
+  .lg\:px-80 {
+    padding-left: 20rem;
+    padding-right: 20rem;
   }
 }
 
