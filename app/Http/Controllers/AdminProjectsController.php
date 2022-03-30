@@ -20,6 +20,29 @@ class AdminProjectsController extends Controller
 
     }
 
+    public function creationPage(){
+        $projects = Project::all();
+
+        return view('admin.projects.create', [
+            'projects' => $projects
+        ]);
+    }
+
+    public function create(Request $request){
+        $project = new Project();
+        $project->name = $request->input('name');
+        $project->description = $request->input('description');
+        if($request->hasFile('image')) {
+            $project->picture = $request->file('image')->store('projects');
+        }
+        $project->save();
+
+        $project->languages()->sync($request->input('languages'));
+
+        return redirect('admin/projects.list')->with('status', 'Project created');
+    }
+
+
     public function edit(Project $project) {
         $langs = Language::all();
 
