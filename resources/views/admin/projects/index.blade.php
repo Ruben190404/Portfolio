@@ -28,7 +28,7 @@
                                     <td>{{ $project->title }}</td>
                                     <td>{{$project->description}}</td>
                                     <td>
-                                        <img src="{{ asset('images/projectsHP/' . $project->picture) }}" alt="" width="100">
+                                        <img src="{{ asset('storage/' . $project->picture) }}" alt="" width="100">
                                     <td>
                                         @foreach($project->languages as $language)
                                             {{ $language->title }}<br>

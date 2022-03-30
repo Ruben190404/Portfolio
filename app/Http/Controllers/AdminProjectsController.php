@@ -33,6 +33,7 @@ class AdminProjectsController extends Controller
         // project opslaan
         $project->title = $request->input('title');
         $project->description = $request->input('description');
+
         if($request->hasFile('image')) {
             $project->picture = $request->file('image')->store('projects');
         }
