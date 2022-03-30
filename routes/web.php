@@ -29,7 +29,8 @@ Route::get('/projects', ['App\Http\Controllers\RoutesController', 'projectOpen']
 
 Route::get('/about-me', ['App\Http\Controllers\RoutesController', 'aboutmeOpen']);
 
-Route::get('/contact', ['App\Http\Controllers\RoutesController', 'contactOpen']);
+Route::get('/contact', ['App\Http\Controllers\RoutesController', 'contactOpen'])
+    ->name('contact');
 
 Route::get('/donate', ['App\Http\Controllers\RoutesController', 'donateOpen']);
 
@@ -41,8 +42,12 @@ Route::resource('/admin/languages', \App\Http\Controllers\AdminLanguagesControll
     ->middleware(['auth'])
     ->names('admin.languages');
 
-Route::resource('/admin/contacts', \App\Http\Controllers\AdminContactsController::class)
-    ->middleware(['auth'])
+Route::group(['middleware' => 'auth'], function () {
+    Route::resource('/admin/contacts', \App\Http\Controllers\AdminContactsController::class, ['except' => ['store']])
+        ->middleware(['auth'])
+        ->names('admin.contacts');
+});
+Route::resource('/admin/contacts', \App\Http\Controllers\AdminContactsController::class, ['only' => ['store']])
     ->names('admin.contacts');
 
 Route::resource('/admin/donations', \App\Http\Controllers\AdminDonationsController::class)
