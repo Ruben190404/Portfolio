@@ -20,26 +20,30 @@ class AdminProjectsController extends Controller
 
     }
 
-    public function creationPage(){
+    public function create(){
         $projects = Project::all();
+        $langs = Language::all();
 
         return view('admin.projects.create', [
-            'projects' => $projects
+            'projects' => $projects,
+            'langs' => $langs
         ]);
     }
 
-    public function create(Request $request){
+    public function store(Request $request){
         $project = new Project();
-        $project->name = $request->input('name');
+        $project->title = $request->input('title');
         $project->description = $request->input('description');
+        $project->picture = '';
         if($request->hasFile('image')) {
             $project->picture = $request->file('image')->store('projects');
         }
+        $project->active = $request->input('active', 0);
         $project->save();
 
         $project->languages()->sync($request->input('languages'));
 
-        return redirect('admin/projects.list')->with('status', 'Project created');
+        return redirect(route('admin.projects.index'))->with('status', 'Project created');
     }
 
 
@@ -60,20 +64,20 @@ class AdminProjectsController extends Controller
         if($request->hasFile('image')) {
             $project->picture = $request->file('image')->store('projects');
         }
+        $project->active = $request->input('active', 0);
         $project->save();
 
         // talen opslaan
         $project->languages()->sync($request->input('languages'));
 
         // terug sturen naar overzichtspagina
-        return redirect()->route('admin.projects.list')->with('status', 'Project updated successfully');
+        return redirect()->route('admin.projects.index')->with('status', 'Project updated successfully');
 
     }
 
     public function destroy(Project $project) {
-        $project->languages()->delete();
         $project->delete();
 
-        return redirect()->route('admin.projects.list')->with('status', 'Project deleted successfully');
+        return redirect()->route('admin.projects.index')->with('status', 'Project deleted successfully');
     }
 }

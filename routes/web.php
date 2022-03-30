@@ -33,21 +33,9 @@ Route::get('/contact', ['App\Http\Controllers\RoutesController', 'contactOpen'])
 
 Route::get('/donate', ['App\Http\Controllers\RoutesController', 'donateOpen']);
 
-Route::get('/admin/projects', ['App\Http\Controllers\AdminProjectsController', 'index'])
+Route::resource('/admin/projects', \App\Http\Controllers\AdminProjectsController::class)
     ->middleware(['auth'])
-    ->name('admin.projects.list');
+    ->names('admin.projects');
 
-Route::get('/admin/projects/edit/{project}', ['App\Http\Controllers\AdminProjectsController', 'edit'])
-    ->middleware(['auth'])
-    ->name('admin.projects.edit');
-
-Route::post('/admin/projects/edit/{project}', ['App\Http\Controllers\AdminProjectsController', 'update'])
-    ->middleware(['auth']);
-
-Route::delete('/admin/projects/delete/{project}', ['App\Http\Controllers\AdminProjectsController', 'destroy'])
-    ->middleware(['auth'])->name('admin.projects.delete');
-
-Route::post('/admin/projects/create', ['App\Http\Controllers\AdminProjectsController', 'create'])
-    ->middleware(['auth'])->name('admin.projects.create');
 
 require __DIR__.'/auth.php';
