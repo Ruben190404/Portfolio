@@ -78,6 +78,18 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.projects.index')" :active="request()->routeIs('dashboard')">
+                Projecten
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.languages.index')" :active="request()->routeIs('dashboard')">
+                Talen
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.contacts.index')" :active="request()->routeIs('dashboard')">
+                Contacten
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.donations.index')" :active="request()->routeIs('dashboard')">
+                Donatie Middelen
+            </x-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->

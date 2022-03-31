@@ -20,6 +20,7 @@
                             <th class="text-left">ID</th>
                             <th class="text-left">Methode</th>
                             <th class="text-left">Link</th>
+                            <th class="text-center">Opties</th>
                         </tr>
                         </thead>
                         <tbody>

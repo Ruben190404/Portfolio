@@ -827,6 +827,9 @@ select {
 .w-44 {
   width: 11rem;
 }
+.w-32 {
+  width: 8rem;
+}
 .min-w-full {
   min-width: 100%;
 }
@@ -1647,6 +1650,10 @@ select {
     width: 50%;
   }
 
+  .md\:w-44 {
+    width: 11rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1698,6 +1705,10 @@ select {
 
   .lg\:w-2\/5 {
     width: 40%;
+  }
+
+  .lg\:w-44 {
+    width: 11rem;
   }
 
   .lg\:flex-row {

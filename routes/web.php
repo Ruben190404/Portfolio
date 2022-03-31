@@ -17,9 +17,9 @@ Route::get('/', function () {
     return view('index');
 })->name('home');
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
+//Route::get('/welcome', function () {
+//    return view('welcome');
+//});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
