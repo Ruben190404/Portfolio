@@ -3,9 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Donation;
-use App\Models\Language;
 use App\Models\Project;
-use App\Models\Contact;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -33,7 +31,7 @@ class PageController extends Controller
     }
 
     public function donateOpen(){
-        $donateMethod = donation::all();
+        $donateMethod = Donation::all();
 
         return view('donate', [
             'donateMethod' => $donateMethod,

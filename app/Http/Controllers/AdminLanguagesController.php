@@ -16,10 +16,10 @@ class AdminLanguagesController extends Controller
     }
 
     public function create() {
-        $langs = Language::all();
+        $languages = Language::all();
 
         return view('admin.languages.create', [
-            'langs' => $langs
+            'languages' => $languages
         ]);
     }
 
@@ -32,7 +32,6 @@ class AdminLanguagesController extends Controller
     }
 
     public function edit(Language $language) {
-        $languages = Language::all();
 
         return view('admin.languages.edit', [
             'language' => $language

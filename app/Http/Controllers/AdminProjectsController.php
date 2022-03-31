@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Project_language;
 use App\Models\Language;
 use App\Models\Project;
 use Illuminate\Http\Request;
@@ -11,10 +10,10 @@ class AdminProjectsController extends Controller
 {
     public function index() {
         $projects = Project::all();
-        $langs = Language::all();
+        $languages = Language::all();
 
         return view('admin.projects.index', [
-            'langs' => $langs,
+            'languages' => $languages,
             'projects' => $projects
         ]);
 
@@ -22,11 +21,11 @@ class AdminProjectsController extends Controller
 
     public function create(){
         $projects = Project::all();
-        $langs = Language::all();
+        $languages = Language::all();
 
         return view('admin.projects.create', [
             'projects' => $projects,
-            'langs' => $langs
+            'languages' => $languages
         ]);
     }
 
@@ -47,10 +46,10 @@ class AdminProjectsController extends Controller
     }
 
     public function edit(Project $project) {
-        $langs = Language::all();
+        $languagess = Language::all();
 
      return view('admin.projects.edit', [
-         'langs' => $langs,
+         'languagess' => $languages,
          'project' => $project
      ]);
     }

@@ -18,7 +18,7 @@
                             <input type="text" name="description" placeholder="Beschrijving" class="mb-2">
                             <input type="file" name="image" class="mb-2">
                             <div class="flex flex-col mb-2">
-                                @foreach( $langs as $language )
+                                @foreach( $languages as $language )
                                     <div class="flex flex-row justify-between">
                                         <label for="{{$language->id}}">{{$language->title}}</label>
                                         <input type="checkbox" value="{{ $language->id }}" name="languages[]" >

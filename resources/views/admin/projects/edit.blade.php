@@ -20,7 +20,7 @@
                             <img src="{{ asset('storage/' . $project->picture) }}" alt="" class="w-96 h-auto mx-auto mb-2">
                             <input type="file" name="image" class="mb-2">
                             <div class="flex flex-col mb-2">
-                                @foreach( $langs as $language )
+                                @foreach( $languages as $language )
                                         <div class="flex flex-row justify-between">
                                             <label for="{{$language->id}}">{{ $language->title }}:</label>
                                             <input type="checkbox" @if (in_array($language->id, $project->languages->pluck('id')->toArray())) checked @endif name="languages[]" value="{{ $language->id }}" >
