@@ -25,14 +25,14 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/projects', ['App\Http\Controllers\RoutesController', 'projectOpen']);
+Route::get('/projects', ['App\Http\Controllers\PageController', 'projectOpen']);
 
-Route::get('/about-me', ['App\Http\Controllers\RoutesController', 'aboutmeOpen']);
+Route::get('/about-me', ['App\Http\Controllers\PageController', 'aboutmeOpen']);
 
-Route::get('/contact', ['App\Http\Controllers\RoutesController', 'contactOpen'])
+Route::get('/contact', ['App\Http\Controllers\PageController', 'contactOpen'])
     ->name('contact');
 
-Route::get('/donate', ['App\Http\Controllers\RoutesController', 'donateOpen']);
+Route::get('/donate', ['App\Http\Controllers\PageController', 'donateOpen']);
 
 Route::resource('/admin/projects', \App\Http\Controllers\AdminProjectsController::class)
     ->middleware(['auth'])

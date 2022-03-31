@@ -8,7 +8,7 @@ use App\Models\Project;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 
-class RoutesController extends Controller
+class PageController extends Controller
 {
     public function indexOpen(){
         return view('index');
