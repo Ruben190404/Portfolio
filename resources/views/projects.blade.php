@@ -1,10 +1,10 @@
 <x-guest-layout>
-    <h1 class="text-4xll sm:text-5xl md:text-7xl flex justify-center mt-6 shrink w-auto h-auto" style="font-family: 'Monoton', cursive;">
+    <h1 class="text-5xl sm:text-6xl md:text-7xl flex justify-center mt-6" style="font-family: 'Monoton', cursive;">
         Projecten
     </h1>
     <section class="w-4/5 h-auto flex mx-auto mt-8 flex-wrap justify-evenly">
         @foreach($projects AS $project)
-            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white w-full sm:w-1/3 md:w-1/4 mr-px mb-16">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white w-full sm:w-2/5 md:w-3/6 mr-px mb-16">
                 <img class="w-full" src="{{ asset('storage/' . $project->picture) }}">
                 <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">{{$project->title}}</div>

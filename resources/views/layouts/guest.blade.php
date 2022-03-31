@@ -13,28 +13,30 @@
     <link rel="icon" href="images/icon.png">
 </head>
 <body class="flex flex-col h-screen bg-gray-50 font-sans" style="font-family: 'Rubik', sans-serif;">
-    <header class="flex flex-row justify-between bg-white py-3.5 content-center px-40 shadow-lg">
-        <a href="/"><img class="w-14 h-auto" src="images/icon.png"></a>
-        <ul class="flex justify-between w-3/5 flex md:flex-0">
-            <a href="/" class="self-center">
-                <button class="bg-blue-500 hover:bg-blue-400 w-48 text-white font-medium py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-md">Home
-                </button>
+    <nav class=" md:flex md:justify-between bg-white py-3.5 content-center px-10 shadow-lg">
+        <div class="flex flex-row justify-between">
+            <a href="/">
+                <img class="w-16 h-auto" src="images/icon.png">
             </a>
-            <a href="projects" class="self-center">
-                <button class="bg-blue-500 hover:bg-blue-400 w-48 text-white font-medium py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-md">Projecten
+            <div class="my-auto  md:hidden">
+                <button type="button" onclick="dropdown()">
+                    <svg class="h-10 w-10 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
                 </button>
-            </a>
-            <a href="contact" class="self-center">
-                <button class="bg-blue-500 hover:bg-blue-400 w-48 text-white font-medium py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-md">Contact
-                </button>
-            </a>
-        </ul>
-    </header>
+            </div>
+        </div>
+        <div id="nav" class="hidden md:flex flex-col md:flex-row md:justify-between items-center w-4/6 text-center mx-auto">
+            <a href="/" class="bg-blue-500 hover:bg-blue-400 w-48 text-white font-medium py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-md my-2">Home</a>
+            <a href="projects" class="bg-blue-500 hover:bg-blue-400 w-48 text-white font-medium py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-md my-2">Projecten</a>
+            <a href="contact" class="bg-blue-500 hover:bg-blue-400 w-48 text-white font-medium py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-md my-2">Contact</a>
+        </div>
+    </nav>
     <div class="flex-grow">
         {{ $slot }}
     </div>
-    <footer class="text-center flex flex-col h-full justify-end">
-        <div class="text-base"> Copyright ©<?php $copyYear = 2004;
+    <footer class="text-center flex flex-col h-full justify-end mt-6">
+        <div class="text-base"> Copyright ©<?php $copyYear = 2021;
                                                  $curYear = date('Y');
                                                  echo $copyYear . (($copyYear != $curYear) ? '-' . $curYear : '');
                                                  ?> Ruben luteijn. All Rights Reserved</div>
@@ -43,5 +45,16 @@
             </button>
         </a>
     </footer>
+<script>
+    var clicked = false;
+    function dropdown() {
+        if (clicked === false || document.getElementById("nav").style.display === "none") {
+            document.getElementById("nav").style.display = 'flex';
+            clicked = true;
+        } else {
+            document.getElementById("nav").style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>
