@@ -27,9 +27,9 @@
             </div>
         </div>
         <div id="nav" class="hidden md:flex flex-col md:flex-row md:justify-between items-center w-4/6 text-center mx-auto">
-            <a href="/" class="bg-blue-500 hover:bg-blue-400 w-48 text-white font-medium py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-md my-2">Home</a>
-            <a href="projects" class="bg-blue-500 hover:bg-blue-400 w-48 text-white font-medium py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-md my-2">Projecten</a>
-            <a href="contact" class="bg-blue-500 hover:bg-blue-400 w-48 text-white font-medium py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-md my-2">Contact</a>
+            <a href="/" class="bg-blue-500 hover:bg-blue-400 w-44 text-white font-medium py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-md my-2">Home</a>
+            <a href="projects" class="bg-blue-500 hover:bg-blue-400 w-44 text-white font-medium py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-md my-2">Projecten</a>
+            <a href="contact" class="bg-blue-500 hover:bg-blue-400 w-44 text-white font-medium py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-md my-2">Contact</a>
         </div>
     </nav>
     <div class="flex-grow">
