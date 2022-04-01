@@ -3,22 +3,22 @@
         Projecten
     </h1>
     {{--filter products by language--}}
-    <section class="mx-auto w-36">
-        <div>
+    <section class="mx-auto w-40">
+        <button type="button" id="toggleFilter" class="flex flex-row rounded border p-1 w-full border-black mt-8">
             Filteren op taal.
-        </div>
-        <div>
-            <form action="{{ route('projects') }}" method="post" class="flex flex-col">
+            <img src="{{ asset('images/arrow-down.svg') }}" alt="arrow down" class="w-4 h-4 ml-2 my-auto" id="arrow-down">
+            <img src="{{ asset('images/arrow-up.svg') }}" alt="arrow up" class="w-4 h-4 ml-2 my-auto hidden" id="arrow-up">
+        </button>
+            <form action="{{ route('projects') }}" method="post" class="flex flex-col hidden border border-x-black border-b-black rounded-b" id="filter">
                 @csrf
                 @foreach($languages as $language)
-                    <div class="flex flex-row">
-                        <label for="{{ $language->id }}" class="mr-2">{{$language->title}}</label>
-                        <input type="checkbox" name="language[]" id="{{ $language->id }}" value="{{ $language->id }}">
+                    <div class="flex flex-row justify-between">
+                        <input type="checkbox" name="language[]" class="rounded my-auto ml-1" id="{{ $language->id }}" value="{{ $language->id }}">
+                        <label for="{{ $language->id }}" class="w-24">{{$language->title}}</label>
                     </div>
                 @endforeach
-                <button type="submit">Filter</button>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-400 w-20 mx-auto text-white font-medium py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-md mb-2">Filter</button>
             </form>
-        </div>
     </section>
     <section class="w-4/5 h-auto flex mx-auto mt-8 flex-wrap justify-evenly">
         @foreach($projects AS $project)

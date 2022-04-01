@@ -5542,6 +5542,24 @@ if (document.getElementById('close-box')) {
   });
 }
 
+if (document.getElementById('toggleFilter')) {
+  document.getElementById('toggleFilter').addEventListener('click', function () {
+    document.getElementById("toggleFilter").classList.toggle('rounded');
+    document.getElementById("toggleFilter").classList.toggle('rounded-t');
+
+    if (clicked === false || document.getElementById("filter").style.display === "none") {
+      document.getElementById("filter").style.display = 'flex';
+      document.getElementById("arrow-down").style.display = 'none';
+      document.getElementById("arrow-up").style.display = 'block';
+      clicked = true;
+    } else {
+      document.getElementById("filter").style.display = "none";
+      document.getElementById("arrow-down").style.display = 'block';
+      document.getElementById("arrow-up").style.display = 'none';
+    }
+  });
+}
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
