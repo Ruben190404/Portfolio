@@ -17,15 +17,13 @@ Route::get('/', function () {
     return view('index');
 })->name('home');
 
-//Route::get('/welcome', function () {
-//    return view('welcome');
-//});
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
 Route::get('/projects', ['App\Http\Controllers\PageController', 'projectOpen']);
+
+Route::post('/projects', ['App\Http\Controllers\PageController', 'projectOpen'])->name('projects');
 
 Route::get('/about-me', ['App\Http\Controllers\PageController', 'aboutmeOpen']);
 

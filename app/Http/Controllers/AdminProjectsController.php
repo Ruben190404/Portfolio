@@ -46,10 +46,10 @@ class AdminProjectsController extends Controller
     }
 
     public function edit(Project $project) {
-        $languagess = Language::all();
+        $languages = Language::all();
 
      return view('admin.projects.edit', [
-         'languagess' => $languages,
+         'languages' => $languages,
          'project' => $project
      ]);
     }
