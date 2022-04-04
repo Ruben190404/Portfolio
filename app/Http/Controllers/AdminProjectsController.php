@@ -30,6 +30,14 @@ class AdminProjectsController extends Controller
     }
 
     public function store(Request $request){
+
+        $validated = $request->validate([
+            'title' => 'required|unique:posts|max:255',
+            'description' => 'required',
+            'picture' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
+            'active' => 'required',
+        ]);
+
         $project = new Project();
         $project->title = $request->input('title');
         $project->description = $request->input('description');
@@ -55,6 +63,7 @@ class AdminProjectsController extends Controller
     }
 
     public function update(Project $project, Request $request) {
+
         // project opslaan
         $project->title = $request->input('title');
         $project->description = $request->input('description');

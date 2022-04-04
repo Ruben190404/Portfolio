@@ -671,17 +671,17 @@ select {
 .mt-6 {
   margin-top: 1.5rem;
 }
-.mr-2 {
-  margin-right: 0.5rem;
+.ml-1 {
+  margin-left: 0.25rem;
 }
 .mr-px {
   margin-right: 1px;
 }
-.mb-16 {
-  margin-bottom: 4rem;
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
-.ml-1 {
-  margin-left: 0.25rem;
+.mr-2 {
+  margin-right: 0.5rem;
 }
 .-mr-2 {
   margin-right: -0.5rem;
@@ -704,8 +704,8 @@ select {
 .ml-8 {
   margin-left: 2rem;
 }
-.mr-1 {
-  margin-right: 0.25rem;
+.mt-px {
+  margin-top: 1px;
 }
 .block {
   display: block;
@@ -806,6 +806,9 @@ select {
 .w-4 {
   width: 1rem;
 }
+.w-24 {
+  width: 6rem;
+}
 .w-4\/5 {
   width: 80%;
 }
@@ -832,18 +835,6 @@ select {
 }
 .w-32 {
   width: 8rem;
-}
-.w-2 {
-  width: 0.5rem;
-}
-.w-1 {
-  width: 0.25rem;
-}
-.w-14 {
-  width: 3.5rem;
-}
-.w-24 {
-  width: 6rem;
 }
 .min-w-full {
   min-width: 100%;
@@ -1006,6 +997,9 @@ select {
 }
 .border-r {
   border-right-width: 1px;
+}
+.border-t-2 {
+  border-top-width: 2px;
 }
 .border-gray-300 {
   --tw-border-opacity: 1;
@@ -1387,9 +1381,6 @@ select {
 .duration-75 {
   transition-duration: 75ms;
 }
-.duration-1000 {
-  transition-duration: 1000ms;
-}
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1398,6 +1389,9 @@ select {
 }
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+.text-xxs {
+  font-size: 0.55rem;
 }
 .hover\:border-blue-500:hover {
   --tw-border-opacity: 1;
@@ -1579,6 +1573,10 @@ select {
   .sm\:-my-px {
     margin-top: -1px;
     margin-bottom: -1px;
+  }
+
+  .sm\:mb-16 {
+    margin-bottom: 4rem;
   }
 
   .sm\:ml-10 {

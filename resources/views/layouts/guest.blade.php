@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="color-scheme" content="light only">
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +36,7 @@
     <div class="flex-grow">
         {{ $slot }}
     </div>
-    <footer class="text-center flex flex-col h-full justify-end mt-6">
+    <footer class="text-center flex flex-col h-full justify-end mt-6 px-4 sm:px">
         <div class="text-base"> Copyright © <?php $copyYear = 2021;
                                                 $curYear = date('Y');
                                                 echo $copyYear . (($copyYear != $curYear) ? '-' . $curYear : '')

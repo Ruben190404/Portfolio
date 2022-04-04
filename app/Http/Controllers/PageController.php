@@ -25,6 +25,7 @@ class PageController extends Controller
         return view('projects', [
             'projects' => $projects->get(),
             'languages' => Language::all(),
+            'selected' => $request->get('language') ?? []
         ]);
     }
 
