@@ -34,6 +34,11 @@
         </div>
     </nav>
     <div class="flex-grow">
+        @if(session('status'))
+            <div class="bg-blue-500 text-white text-center py-2 px-4 border-b-4 border-blue-700 rounded-md my-2 w-72 mx-auto" id="timeClose">
+                {{ session('status') }}
+            </div>
+        @endif
         {{ $slot }}
     </div>
     <footer class="text-center flex flex-col h-full justify-end mt-6 px-4 sm:px">

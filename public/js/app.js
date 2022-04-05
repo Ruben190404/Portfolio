@@ -5560,6 +5560,12 @@ if (document.getElementById('toggleFilter')) {
   });
 }
 
+if (document.getElementById('timeClose')) {
+  setTimeout(function () {
+    document.getElementById('timeClose').style.display = 'none';
+  }, 2000);
+}
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":

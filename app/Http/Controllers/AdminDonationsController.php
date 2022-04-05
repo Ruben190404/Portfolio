@@ -25,13 +25,13 @@ class AdminDonationsController extends Controller
 
     public function store(Request $request){
         $validated = $request->validate([
-            'link' => 'required|unique:posts|max:255',
-            'method' => 'required',
+            'link' => 'required|url',
+            'methode' => 'required',
 
         ]);
 
         $donation = new Donation();
-        $donation->method = $request->input('method');
+        $donation->method = $request->input('methode');
         $donation->link = $request->input('link');
         $donation->save();
 

@@ -13,7 +13,10 @@
                         <form action="{{ route('admin.languages.store') }}" method="post" enctype="multipart/form-data" class="mx-auto flex flex-col mb-2">
                             @csrf
                             <input type="hidden" name="id">
-                            <input type="text" name="title" placeholder="Titel" class="mb-2">
+                            <input type="text" name="titel" placeholder="Titel" class="mb-2">
+                            @error('titel')
+                            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 mb-2 w-80 rounded relative">{{ $message }}</div>
+                            @enderror
                             <button type="submit" class="border-2 border-indigo-600 ...">Toevoegen</button>
                         </form>
                     </div>

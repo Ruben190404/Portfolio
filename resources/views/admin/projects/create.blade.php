@@ -14,8 +14,14 @@
                         <form action="{{ route('admin.projects.store') }}" method="post" enctype="multipart/form-data" class="mx-auto flex flex-col mb-2">
                             @csrf
                             <input type="hidden" name="id">
-                            <input type="text" name="title" placeholder="Titel" class="mb-2">
-                            <input type="text" name="description" placeholder="Beschrijving" class="mb-2">
+                            <input type="text" name="titel" placeholder="Titel" class="mb-2">
+                            @error('titel')
+                            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 mb-2 w-80 rounded relative">{{ $message }}</div>
+                            @enderror
+                            <input type="text" name="beschrijving" placeholder="Beschrijving" class="mb-2">
+                            @error('beschrijving')
+                            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 mb-2 w-80 rounded relative">{{ $message }}</div>
+                            @enderror
                             <input type="file" name="image" class="mb-2">
                             <div class="flex flex-col mb-2">
                                 @foreach( $languages as $language )

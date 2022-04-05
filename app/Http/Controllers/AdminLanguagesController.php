@@ -25,11 +25,11 @@ class AdminLanguagesController extends Controller
 
     public function store(Request $request){
         $validated = $request->validate([
-            'title' => 'required|unique:posts|max:255',
+            'titel' => 'required',
         ]);
 
         $language = new Language();
-        $language->title = $request->input('title');
+        $language->title = $request->input('titel');
         $language->save();
 
         return redirect()->route('admin.languages.index');

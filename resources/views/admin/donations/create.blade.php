@@ -13,8 +13,14 @@
                         <form action="{{ route('admin.donations.store') }}" method="post" enctype="multipart/form-data" class="mx-auto flex flex-col mb-2">
                             @csrf
                             <input type="hidden" name="id">
-                            <input type="text" name="method" placeholder="Methode" class="mb-2">
+                            <input type="text" name="methode" placeholder="Methode" class="mb-2">
+                            @error('methode')
+                            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 mb-2 w-80 rounded relative">{{ $message }}</div>
+                            @enderror
                             <input type="text" name="link" placeholder="Link" class="mb-2">
+                            @error('link')
+                            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 mb-2 w-80 rounded relative">{{ $message }}</div>
+                            @enderror
                             <button type="submit" class="border-2 border-indigo-600 ...">Toevoegen</button>
                         </form>
                     </div>

@@ -32,15 +32,13 @@ class AdminProjectsController extends Controller
     public function store(Request $request){
 
         $validated = $request->validate([
-            'title' => 'required|unique:posts|max:255',
-            'description' => 'required',
-            'picture' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
-            'active' => 'required',
+            'titel' => 'required',
+            'beschrijving' => 'required',
         ]);
 
         $project = new Project();
-        $project->title = $request->input('title');
-        $project->description = $request->input('description');
+        $project->title = $request->input('titel');
+        $project->description = $request->input('bescrijving');
         $project->picture = '';
         if($request->hasFile('image')) {
             $project->picture = $request->file('image')->store('projects');
