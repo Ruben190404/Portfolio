@@ -13,27 +13,27 @@
             <form class="ml-8" method="post" action="{{route('admin.contacts.store')}}">
                 @csrf
                 <div class="text-3xl">Laat je contact info achter.</div><br>
-                <label for="First Name" class="text-gray-700 text-lg font-medium w-1/2">Voornaam:</label><br>
-                    <input type="text" name="First Name" placeholder="John" class="w-5/6 h-10 mt-px mb-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-medium focus:border-indigo-500 focus:outline-none"><br>
+                <label for="voornaam" class="text-gray-700 text-lg font-medium w-1/2">Voornaam:</label><br>
+                    <input type="text" name="voornaam" placeholder="John" class="w-5/6 h-10 mt-px mb-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-medium focus:border-indigo-500 focus:outline-none"><br>
 
-                @error('First Name')
-                <div class="alert alert-danger">{{ $message }}</div>
+                @error('voornaam')
+                <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 w-80 rounded relative">{{ $message }}</div>
                 @enderror
 
-                <label for="Last Name" class="text-gray-700 text-lg font-medium w-1/2">Achternaam:</label><br>
-                    <input type="text" name="Last Name" placeholder="Doe" class="w-5/6 h-10 mt-px mb-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-medium focus:border-indigo-500 focus:outline-none "><br>
-                @error('Last Name')
-                <div class="alert alert-danger">{{ $message }}</div>
+                <label for="achternaam" class="text-gray-700 text-lg font-medium w-1/2">Achternaam:</label><br>
+                    <input type="text" name="achternaam" placeholder="Doe" class="w-5/6 h-10 mt-px mb-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-medium focus:border-indigo-500 focus:outline-none "><br>
+                @error('achternaam')
+                <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 w-80 rounded relative">{{ $message }}</div>
                 @enderror
-                <label for="Email" class="text-gray-700 text-lg font-medium w-1/2">Email:</label><br>
-                    <input type="email" name="Email" placeholder="johndoe@gmail.com" class="w-5/6 h-10 mt-px mb-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-medium focus:border-indigo-500 focus:outline-none"><br>
-                @error('Email')
-                <div class="alert alert-danger">{{ $message }}</div>
+                <label for="email adres" class="text-gray-700 text-lg font-medium w-1/2">Email:</label><br>
+                    <input type="email" name="email adres" placeholder="johndoe@gmail.com" class="w-5/6 h-10 mt-px mb-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-medium focus:border-indigo-500 focus:outline-none"><br>
+                @error('email adres')
+                <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 w-80 rounded relative">{{ $message }}</div>
                 @enderror
-                <label for="Phonenumber" class="text-gray-700 text-lg font-medium w-1/2">Telefoonnummer:</label><br>
-                    <input type="text" name="Phonenumber" placeholder="0613371271" class="w-5/6 h-10 mt-px mb-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-medium focus:border-indigo-500 focus:outline-none"><br>
-                @error('Phonenumber')
-                <div class="alert alert-danger">{{ $message }}</div>
+                <label for="telefoonnummer" class="text-gray-700 text-lg font-medium w-1/2">Telefoonnummer:</label><br>
+                    <input type="text" name="telefoonnummer" placeholder="0613371271" class="w-5/6 h-10 mt-px mb-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-medium focus:border-indigo-500 focus:outline-none"><br>
+                @error('telefoonnummer')
+                <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 w-80 rounded relative">{{ $message }}</div>
                 @enderror
                     <input type="submit" class="bg-blue-500 hover:bg-blue-400 w-36 text-white font-medium py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-md mt-1">
             </form>
