@@ -29,7 +29,7 @@
                                 <tr>
                                     <td>{{ $project->id }}</td>
                                     <td>{{ $project->title }}</td>
-                                    <td>{{$project->description}}</td>
+                                    <td class="break-all">{{$project->description}}</td>
                                     <td>
                                         <img src="{{ asset('storage/' . $project->picture) }}" alt="" class="w-24">
                                     <td>

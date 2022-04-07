@@ -2,7 +2,6 @@
     <h1 class="text-5xl sm:text-6xl md:text-7xl flex justify-center mt-6" style="font-family: 'Monoton', cursive;">
         Projecten
     </h1>
-    {{--filter products by language--}}
     <section class="mx-auto w-40">
         <button type="button" id="toggleFilter" class="flex flex-row rounded border p-1 w-full border-black mt-8">
             Filteren op taal.
