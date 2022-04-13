@@ -38,7 +38,7 @@ class AdminProjectsController extends Controller
 
         $project = new Project();
         $project->title = $request->input('titel');
-        $project->description = $request->input('bescrijving');
+        $project->description = $request->input('beschrijving');
         $project->picture = '';
         if($request->hasFile('image')) {
             $project->picture = $request->file('image')->store('projects');
