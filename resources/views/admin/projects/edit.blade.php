@@ -14,7 +14,6 @@
                         <form action="{{ route('admin.projects.update', ['project' => $project]) }}" method="post" enctype="multipart/form-data" class="mx-auto flex flex-col mb-2">
                             @method('PUT')
                             @csrf
-                            <input type="hidden" name="id" value="{{ $project->id }}">
                             <input type="text" name="title" placeholder="Titel" value="{{ $project->title }}" class="mb-2">
                             <input type="text" name="description" placeholder="Beschrijving" value="{{ $project->description }}" class="mb-2">
                             <img src="{{ asset('storage/' . $project->picture) }}" alt="" class="w-96 h-auto mx-auto mb-2">

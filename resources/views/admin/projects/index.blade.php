@@ -44,7 +44,6 @@
                                         <form action="{{ route('admin.projects.destroy', ['project'  => $project]) }}" method="post">
                                             @method('DELETE')
                                             @csrf
-                                            <input type="hidden" name="id" value="{{ $project->id }}">
                                             <button type="submit">Verwijderen</button>
                                         </form>
                                     </td>

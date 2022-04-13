@@ -14,7 +14,7 @@
                         <form action="{{ route('admin.languages.update', ['language' => $language]) }}" method="post" enctype="multipart/form-data" class="mx-auto flex flex-col mb-2">
                             @method('PUT')
                             @csrf
-                            <input type="hidden" name="id" value="{{ $language->id }}">
+
                             <input type="text" name="title" placeholder="Titel" value="{{ $language->title }}" class="mb-2">
                             <button type="submit" class="border-2 border-indigo-600 ...">Opslaan</button>
                         </form>

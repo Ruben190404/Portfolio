@@ -13,7 +13,6 @@
                         <div class="mx-auto mb-2">Project Toevoegen</div>
                         <form action="{{ route('admin.projects.store') }}" method="post" enctype="multipart/form-data" class="mx-auto flex flex-col mb-2">
                             @csrf
-                            <input type="hidden" name="id">
                             <input type="text" name="titel" placeholder="Titel" class="mb-2">
                             @error('titel')
                             <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 mb-2 w-80 rounded relative">{{ $message }}</div>
