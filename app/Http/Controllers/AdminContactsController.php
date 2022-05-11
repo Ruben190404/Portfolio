@@ -39,6 +39,6 @@ class AdminContactsController extends Controller
         $contact->phonenumber = $request->input('telefoonnummer');
         $contact->save();
 
-        return redirect()->route('contact')->with('status', 'Contact added successfully');
+        return redirect()->route('contact')->with('status', 'Contact info verstuurt.');
     }
 }
