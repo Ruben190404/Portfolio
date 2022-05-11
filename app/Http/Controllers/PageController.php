@@ -30,8 +30,6 @@ class PageController extends Controller
     }
 
     public function contactOpen(){
-
-
         return view('contact');
     }
 

@@ -45,6 +45,7 @@ Route::group(['middleware' => 'auth'], function () {
         ->middleware(['auth'])
         ->names('admin.contacts');
 });
+
 Route::resource('/admin/contacts', \App\Http\Controllers\AdminContactsController::class, ['only' => ['store']])
     ->names('admin.contacts');
 

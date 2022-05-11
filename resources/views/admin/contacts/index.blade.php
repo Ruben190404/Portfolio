@@ -30,7 +30,6 @@
                                     <form action="{{ route('admin.contacts.destroy', ['contact'  => $contact]) }}" method="post">
                                         @method('DELETE')
                                         @csrf
-                                        <input type="hidden" name="id" value="{{ $contact->id }}">
                                         <button type="submit">Verwijderen</button>
                                     </form>
                                 </td>

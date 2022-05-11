@@ -9,17 +9,7 @@
                     Hallo, ik ben Ruben Luteijn.
                 </h1>
                 <p class="text-center">
-                    Ik ben <?php
-                    //date in mm/dd/yyyy format; or it can be in other formats as well
-                    $birthDate = "4/19/2004";
-                    //explode the date to get month, day and year
-                    $birthDate = explode("/", $birthDate);
-                    //get age from date or birthdate
-                    $age = (date("md", date("U", mktime(0, 0, 0, $birthDate[0], $birthDate[1], $birthDate[2]))) > date("md")
-                        ? ((date("Y") - $birthDate[2]) - 1)
-                        : (date("Y") - $birthDate[2]));
-                    echo $age . " jaar oud";
-                    ?>
+                    Ik ben {{ \App\Http\Controllers\Controller::age() }}
                     en kom uit Nijkerk. Ik heb vanaf 2016 tot 2021 een VMBO-opleiding gevolgd op het Corlaer College.
                     Momenteel doe ik de opleiding Software-Development op Landstede MBO.
                     Sinds ik met mijn opleiding ben begonnen heb ik al veel kennis opgedaan.

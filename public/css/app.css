@@ -1411,6 +1411,9 @@ select {
 .text-xxs {
   font-size: 0.55rem;
 }
+.font-monoton {
+    font-family: 'Monoton', cursive;
+}
 .hover\:border-blue-500:hover {
   --tw-border-opacity: 1;
   border-color: rgb(59 130 246 / var(--tw-border-opacity));

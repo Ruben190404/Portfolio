@@ -42,10 +42,7 @@
         {{ $slot }}
     </div>
     <footer class="text-center flex flex-col h-full justify-end mt-6 px-4 sm:px">
-        <div class="text-base"> Copyright © <?php $copyYear = 2021;
-                                                $curYear = date('Y');
-                                                echo $copyYear . (($copyYear != $curYear) ? '-' . $curYear : '')
-                                                ;?> Ruben luteijn. All Rights Reserved</div>
+        <div class="text-base"> Copyright © {{ \App\Http\Controllers\Controller::copyright() }} Ruben luteijn. All Rights Reserved</div>
         <a href="donate" class="self-center">
             <button class="bg-blue-500 hover:bg-blue-400 w-36 text-white font-medium py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-md mb-2">Doneer
             </button>

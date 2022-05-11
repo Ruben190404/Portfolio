@@ -5,3 +5,7 @@
 .text-xxs {
   font-size: 0.55rem;
 }
+
+.font-monoton {
+    font-family: 'Monoton', cursive;
+}
