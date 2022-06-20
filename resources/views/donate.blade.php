@@ -6,7 +6,8 @@
                 @foreach($donateMethod AS $donate)
                     <div>
                         <a href="{{$donate->link}}" class="justify-center">
-                            <button class="bg-blue-500 hover:bg-blue-400 w-4/6 text-white font-medium py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-md mb-5">{{$donate->method}}
+                            <button
+                                class="bg-blue-500 hover:bg-blue-400 w-4/6 text-white font-medium py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-md mb-5">{{$donate->method}}
                             </button>
                         </a>
                     </div>

@@ -21,18 +21,19 @@
                             @error('beschrijving')
                             <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 mb-2 w-80 rounded relative">{{ $message }}</div>
                             @enderror
-                            <input type="file" name="image" class="mb-2">
+                            <label for="image" class="mb-2">Afbeelding:</label>
+                            <input type="file" name="image" id="image" class="mb-2">
                             <div class="flex flex-col mb-2">
                                 @foreach( $languages as $language )
                                     <div class="flex flex-row justify-between">
                                         <label for="{{$language->id}}">{{$language->title}}</label>
-                                        <input type="checkbox" value="{{ $language->id }}" name="languages[]" >
+                                        <input type="checkbox" value="{{ $language->id }}" id="{{$language->id}}" name="languages[]" >
                                     </div>
                                 @endforeach
                             </div>
                             <div class="flex flex-row justify-between">
                                 <label for="active">Active :</label>
-                                <input type="checkbox" name="active" value="1">
+                                <input type="checkbox" name="active" id="active" value="1">
                             </div>
                             <button type="submit" class="border-2 border-indigo-600 ...">Create</button>
                         </form>
