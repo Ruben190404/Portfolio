@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class AdminContactsController extends Controller
 {
 
-    public function index()
+    public function index() // loads the index page for all the contacts
     {
         $contacts = Contact::all();
 
@@ -17,14 +17,15 @@ class AdminContactsController extends Controller
         ]);
     }
 
-    public function destroy(Contact $contact)
+    public function destroy(Contact $contact) // deletes the contact
     {
         $contact->delete();
 
         return redirect()->route('admin.contacts.index')->with('status', 'Contact deleted successfully');
     }
 
-    public function store(Request $request){
+    public function store(Request $request) // creates a new contact through the contact form
+    {
         $validated = $request->validate([
             'voornaam' => 'required',
             'achternaam' => 'required',

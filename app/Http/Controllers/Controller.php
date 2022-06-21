@@ -11,7 +11,7 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function age()
+    public function age() // calculates the age of a person
     {
         //date in mm/dd/yyyy format; or it can be in other formats as well
         $birthDate = "4/19/2004";
@@ -24,7 +24,7 @@ class Controller extends BaseController
         echo $age . " jaar oud";
     }
 
-    public function copyright()
+    public function copyright() // calculates the copyright year
     {
         $copyYear = 2021;
         $curYear = date('Y');

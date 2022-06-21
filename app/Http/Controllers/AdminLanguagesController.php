@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 
 class AdminLanguagesController extends Controller
 {
-    public function index() {
+    public function index() // loads the index page for all the languages and tools
+    {
         $languages = Language::all();
 
         return view('admin.languages.index', [
@@ -15,7 +16,8 @@ class AdminLanguagesController extends Controller
         ]);
     }
 
-    public function create() {
+    public function create() // loads the create page for a new language or tool
+    {
         $languages = Language::all();
 
         return view('admin.languages.create', [
@@ -23,7 +25,8 @@ class AdminLanguagesController extends Controller
         ]);
     }
 
-    public function store(Request $request){
+    public function store(Request $request) // adds a new language or tool to the database
+    {
         $validated = $request->validate([
             'titel' => 'required',
         ]);
@@ -35,14 +38,16 @@ class AdminLanguagesController extends Controller
         return redirect()->route('admin.languages.index');
     }
 
-    public function edit(Language $language) {
+    public function edit(Language $language) // loads the edit page for a language or tool
+    {
 
         return view('admin.languages.edit', [
             'language' => $language
         ]);
     }
 
-    public function update(Language $language, Request $request){
+    public function update(Language $language, Request $request) // updates a language or tool in the database
+    {
         $language->title = $request->input('title');
         $language->save();
 
@@ -50,7 +55,8 @@ class AdminLanguagesController extends Controller
 
     }
 
-    public function destroy(Language $language) {
+    public function destroy(Language $language) // deletes a language or tool from the database
+    {
         $language->delete();
 
         return redirect()->route('admin.languages.index')->with('status', 'Language deleted successfully');

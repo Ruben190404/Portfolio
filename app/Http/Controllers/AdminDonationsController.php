@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 
 class AdminDonationsController extends Controller
 {
-    public function index(){
+    public function index() // loads the index page for all the donation methods
+    {
         $donations = Donation::all();
 
         return view('admin.donations.index', [
@@ -15,7 +16,8 @@ class AdminDonationsController extends Controller
         ]);
     }
 
-    public function create(){
+    public function create() // loads the create page for a new donation method
+    {
         $donations = Donation::all();
 
         return view('admin.donations.create', [
@@ -23,7 +25,8 @@ class AdminDonationsController extends Controller
         ]);
     }
 
-    public function store(Request $request){
+    public function store(Request $request) // adds a new donation method to the database
+    {
         $validated = $request->validate([
             'link' => 'required|url',
             'methode' => 'required',
@@ -38,14 +41,16 @@ class AdminDonationsController extends Controller
         return redirect()->route('admin.donations.index')->with('status', 'Donation method added successfully');
     }
 
-    public function edit(Donation $donation){
+    public function edit(Donation $donation) // loads the edit page for a donation method
+    {
 
         return view('admin.donations.edit', [
             'donation' => $donation
         ]);
     }
 
-    public function update(Donation $donation, Request $request){
+    public function update(Donation $donation, Request $request) // updates a donation method in the database
+    {
         $donation->method = $request->input('method');
         $donation->link = $request->input('link');
         $donation->save();
@@ -53,7 +58,8 @@ class AdminDonationsController extends Controller
         return redirect()->route('admin.donations.index')->with('status', 'Donation method updated successfully');
     }
 
-    public function destroy(Donation $donation){
+    public function destroy(Donation $donation) // deletes a donation method from the database
+    {
         $donation->delete();
 
         return redirect()->route('admin.donations.index')->with('status', 'Donation method deleted successfully');

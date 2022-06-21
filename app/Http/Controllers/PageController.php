@@ -9,11 +9,13 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function indexOpen(){
+    public function indexOpen() // loads the main page
+    {
         return view('index');
     }
 
-    public function projectOpen(Request $request){
+    public function projectOpen(Request $request) // loads the project page with active projects
+    {
         $projects = Project::where('active', 1);
 
         if ($request->has('language')) {
@@ -29,15 +31,18 @@ class PageController extends Controller
         ]);
     }
 
-    public function contactOpen(){
+    public function contactOpen() // loads the contact page
+    {
         return view('contact');
     }
 
-    public function aboutmeOpen(){
+    public function aboutmeOpen() // loads the about me page
+    {
         return view('about-me');
     }
 
-    public function donateOpen(){
+    public function donateOpen() // loads the donate page with all donation methods
+    {
         $donateMethod = Donation::all();
 
         return view('donate', [
