@@ -4,7 +4,7 @@
     </h1>
     <div class="flex flex-col lg:flex-row justify-around mt-3">
         <section class="bg-white w-4/6 h-96 lg:h-full mx-auto mb-10 shadow-lg p-8 flex flex-col justify-evenly lg:mx-8">
-            <div class="text-4xl lg:mb-12">Contact Middelen</div>
+            <div class="text-4xl lg:mb-36">Contact Middelen</div>
             <div class="text-xxs sm:text-xl lg:text-xl lg:mb-6 flex flex-row items-center">
                 <img src="images/lnkdin.png" class="h-auto w-12 mr-4" alt="linkedin logo">
                 <a href="https://www.linkedin.com/in/ruben-luteijn-52471b220/">https://www.linkedin.com/rluteijn</a>
@@ -53,7 +53,7 @@
                     class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 w-80 rounded relative">{{ $message }}</div>
                 @enderror
                 <input type="submit"
-                       class="bg-blue-500 hover:bg-blue-400 w-36 text-white font-medium py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-md mt-1">
+                       class="bg-blue-500 hover:bg-blue-400 w-36 text-white font-medium py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded-md mt-1 lg:mb-0.5">
             </form>
         </section>
     </div>

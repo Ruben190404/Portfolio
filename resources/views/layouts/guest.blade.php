@@ -2,8 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width,">
+    <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="color-scheme" content="light only">
     <meta name="keywords" content="Portfolio, Ruben Luteijn, HTML, CSS, PHP, JavaScript">
@@ -18,7 +17,7 @@
 <body class="flex flex-col h-screen bg-gray-50 font-sans" style="font-family: 'Rubik', sans-serif;">
 <nav class=" md:flex md:justify-between bg-white py-3.5 content-center px-10 shadow-lg">
     <div class="flex flex-row justify-between">
-        <a href="/" >
+        <a href="/">
             <img class="w-16 h-auto" src="images/icon.png" alt="logo">
         </a>
         <div class="my-auto  md:hidden">
