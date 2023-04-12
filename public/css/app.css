@@ -1771,14 +1771,6 @@ select {
     padding-right: 20rem;
   }
 
-  .lg\:pb-0\.5 {
-    padding-bottom: 0.125rem;
-  }
-
-  .lg\:pb-0 {
-    padding-bottom: 0px;
-  }
-
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;

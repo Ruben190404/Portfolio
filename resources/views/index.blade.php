@@ -14,8 +14,7 @@
                     Momenteel doe ik de opleiding Software-Development op Landstede MBO.
                     Sinds ik met mijn opleiding ben begonnen heb ik al veel kennis opgedaan.
                     Ik heb leren programmeren met verschillende programmeertalen/frameworks.
-                    Waaronder: HTML, CSS, JavaScript, PHP, Laravel, Bootstrap, Tailwind CSS en SQL.
-                    Verdere hobbies van mij zijn gamen.
+                    Waaronder: HTML, CSS, JavaScript, PHP, React, C#, Laravel, Bootstrap, Tailwind CSS en SQL.
                 </p>
             </div>
         </section>
