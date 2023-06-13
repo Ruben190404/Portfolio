@@ -31,7 +31,7 @@
         @foreach($projects AS $project)
             <div
                 class="max-w-sm rounded overflow-hidden shadow-lg bg-white w-full sm:w-2/5 md:w-3/6 mr-px mb-6 sm:mb-16">
-                <img class="w-full" src="{{ asset('storage/' . $project->picture) }}" alt="project website foto html">
+                <img class="w-full" src="{{ asset('storage/public/' . $project->picture) }}" alt="project website foto html">
                 <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">{{$project->title}}</div>
                     <p class="text-gray-700 text-base">
