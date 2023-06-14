@@ -16,7 +16,7 @@
                             @csrf
                             <input type="text" name="title" placeholder="Titel" value="{{ $project->title }}" class="mb-2">
                             <input type="text" name="description" placeholder="Beschrijving" value="{{ $project->description }}" class="mb-2">
-                            <img src="{{ asset('storage/' . $project->picture) }}" alt="" class="w-96 h-auto mx-auto mb-2">
+                            <img src="{{ asset('storage/public/' . $project->picture) }}" alt="" class="w-96 h-auto mx-auto mb-2">
                             <input type="file" name="image" class="mb-2">
                             <div class="flex flex-col mb-2">
                                 @foreach( $languages as $language )

@@ -31,7 +31,7 @@
                                     <td>{{ $project->title }}</td>
                                     <td class="break-all">{{$project->description}}</td>
                                     <td>
-                                        <img src="{{ asset('storage/' . $project->picture) }}" alt="project website foto html" class="w-24">
+                                        <img src="{{ asset('storage/public/' . $project->picture) }}" alt="project website foto html" class="w-24">
                                     <td>
                                         @foreach($project->languages as $language)
                                             {{ $language->title }}<br>
