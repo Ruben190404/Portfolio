@@ -3,19 +3,27 @@
         Contact
     </h1>
     <div class="flex flex-col lg:flex-row justify-around mt-3">
-        <section class="bg-white w-4/6 h-96 lg:h-full mx-auto mb-10 shadow-lg p-8 flex flex-col justify-evenly lg:mx-8">
-            <div class="text-4xl lg:mb-36">Contact Middelen</div>
-            <div class="text-xxs sm:text-xl lg:text-xl lg:mb-6 flex flex-row items-center">
-                <img src="images/lnkdin.png" class="h-auto w-12 mr-4" alt="linkedin logo">
-                <a href="https://www.linkedin.com/in/ruben-luteijn-52471b220/">https://www.linkedin.com/rluteijn</a>
+        <section
+            class="bg-white w-4/6 h-96 lg:h-[466px] mx-auto mb-10 shadow-lg p-8 flex flex-col justify-evenly lg:mx-8">
+            <div class="text-4xl">Contact Middelen</div>
+            <div class="flex flex-col">
+                <div class="text-xxs sm:text-xl lg:text-xl lg:mb-6 flex flex-row items-center">
+                    <img src="images/github.png" class="h-auto w-12 mr-4" alt="github logo">
+                    <a href="https://github.com/Ruben190404/">https://github.com/Ruben190404</a>
+                </div>
+                <div class="text-xxs sm:text-xl lg:text-xl lg:mb-6 flex flex-row items-center">
+                    <img src="images/lnkdin.png" class="h-auto w-12 mr-4" alt="linkedin logo">
+                    <a href="https://www.linkedin.com/in/ruben-luteijn-52471b220/">https://www.linkedin.com/rluteijn</a>
+                </div>
+                <div class="text-xxs sm:text-xl lg:text-xl lg:mb-6 flex flex-row items-center">
+                    <img src="images/phone.png" class="h-auto w-12 mr-4" alt="phone image">
+                    +033 6 12390947
+                </div>
+                <div class="text-xxs sm:text-xl lg:text-xl lg:mb-6 flex flex-row items-center">
+                    <img src="images/mail.png" class="h-auto w-12 mr-4" alt="mail icon">
+                    <a href="mailto: luteijnruben@gmail.com">luteijnruben@gmail.com</a>
+                </div>
             </div>
-            <div class="text-xxs sm:text-xl lg:text-xl lg:mb-6 flex flex-row items-center">
-                <img src="images/phone.png" class="h-auto w-12 mr-4" alt="phone image">
-                +033 6 12390947
-            </div>
-            <div class="text-xxs sm:text-xl lg:text-xl lg:mb-6 flex flex-row items-center">
-                <img src="images/mail.png" class="h-auto w-12 mr-4" alt="mail icon">
-                <a href="mailto: luteijnruben@gmail.com">luteijnruben@gmail.com</a></div>
         </section>
         <section class="bg-white shadow-lg w-4/6 mx-auto h-full p-6 lg:mx-8">
             <form class="ml-8" method="post" action="{{route('admin.contacts.store')}}">
