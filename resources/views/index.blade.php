@@ -9,12 +9,14 @@
                     Hallo, ik ben Ruben Luteijn.
                 </h1>
                 <p class="text-center">
-                    Ik ben {{ \App\Http\Controllers\Controller::age() }}
-                    en kom uit Nijkerk. Ik heb vanaf 2016 tot 2021 een VMBO-opleiding gevolgd op het Corlaer College.
-                    Momenteel doe ik de opleiding Software-Development op Landstede MBO.
-                    Sinds ik met mijn opleiding ben begonnen heb ik al veel kennis opgedaan.
-                    Ik heb leren programmeren met verschillende programmeertalen/frameworks.
-                    Waaronder: HTML, CSS, JavaScript, PHP, React, C#, Laravel, Bootstrap, Tailwind CSS en SQL.
+                    Ik ben {{ \App\Http\Controllers\Controller::age() }} jaar oud en kom uit Nijkerk. Van 2016 tot 2021
+                    heb ik een VMBO-opleiding gevolgd aan het Corlaer College. Momenteel volg ik de opleiding
+                    Software-Development aan Landstede MBO. Sinds de start van mijn opleiding heb ik al veel kennis
+                    opgedaan. Ik heb mij onder andere verdiept in diverse programmeertalen, frameworks en libraries,
+                    zoals HTML, CSS, JavaScript, PHP, React, NextJS, C#, Laravel, Bootstrap, Tailwind CSS en SQL.
+                    Daarnaast ben ik vertrouwd geraakt met verschillende tools, zoals Git, GitHub, Composer, NPM, Brew
+                    en Linux. Thuis heb ik tevens een server draaien waarop ik verschillende projecten host, waaronder
+                    deze website.
                 </p>
             </div>
         </section>

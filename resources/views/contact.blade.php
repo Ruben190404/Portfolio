@@ -32,7 +32,7 @@
                 <br>
                 <label for="voornaam" class="text-gray-700 text-lg font-medium w-1/2">Voornaam:</label><br>
                 <input type="text" name="voornaam" placeholder="John"
-                       class="w-5/6 h-10 mt-px mb-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-medium focus:border-indigo-500 focus:outline-none"><br>
+                       class="w-5/6 h-10 mt-px mb-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-medium focus:border-indigo-500 focus:outline-none"><br>
 
                 @error('voornaam')
                 <div
@@ -41,21 +41,21 @@
 
                 <label for="achternaam" class="text-gray-700 text-lg font-medium w-1/2">Achternaam:</label><br>
                 <input type="text" name="achternaam" placeholder="Doe"
-                       class="w-5/6 h-10 mt-px mb-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-medium focus:border-indigo-500 focus:outline-none "><br>
+                       class="w-5/6 h-10 mt-px mb-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-medium focus:border-indigo-500 focus:outline-none"><br>
                 @error('achternaam')
                 <div
                     class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 w-80 rounded relative">{{ $message }}</div>
                 @enderror
                 <label for="email-adres" class="text-gray-700 text-lg font-medium w-1/2">Email:</label><br>
                 <input type="email" name="email-adres" placeholder="johndoe@gmail.com"
-                       class="w-5/6 h-10 mt-px mb-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-medium focus:border-indigo-500 focus:outline-none"><br>
+                       class="w-5/6 h-10 mt-px mb-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-medium focus:border-indigo-500 focus:outline-none"><br>
                 @error('email-adres')
                 <div
                     class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 w-80 rounded relative">{{ $message }}</div>
                 @enderror
                 <label for="telefoonnummer" class="text-gray-700 text-lg font-medium w-1/2">Telefoonnummer:</label><br>
                 <input type="text" name="telefoonnummer" placeholder="0613371271"
-                       class="w-5/6 h-10 mt-px mb-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-medium focus:border-indigo-500 focus:outline-none"><br>
+                       class="w-5/6 h-10 mt-px mb-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-medium focus:border-indigo-500 focus:outline-none"><br>
                 @error('telefoonnummer')
                 <div
                     class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 w-80 rounded relative">{{ $message }}</div>
