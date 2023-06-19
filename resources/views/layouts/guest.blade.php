@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik&display=swap" rel="stylesheet">
     <link rel="icon" href="images/icon.png">
+    <link rel="apple-touch-icon" href="images/icon.png">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body class="flex flex-col h-screen bg-gray-50 font-sans" style="font-family: 'Rubik', sans-serif;">
