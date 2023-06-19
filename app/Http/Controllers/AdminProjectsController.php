@@ -72,7 +72,7 @@ class AdminProjectsController extends Controller
         $project->description = $request->input('description');
 
         if($request->hasFile('image')) {
-            $project->picture = $request->file('image')->store('projects');
+            $project->picture = $request->file('image')->store('projects', ['disk' => 'public']);
         }
 
         $project->active = $request->input('active', 0);
