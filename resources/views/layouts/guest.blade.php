@@ -14,6 +14,17 @@
     <link rel="icon" href="images/icon.png">
     <link rel="apple-touch-icon" href="images/icon.png">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <!-- Hotjar Tracking Code for https://ruben.luteijn.dev -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3650483,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 </head>
 <body class="flex flex-col h-screen bg-gray-50 font-sans" style="font-family: 'Rubik', sans-serif;">
 <nav class=" md:flex md:justify-between bg-white py-3.5 content-center px-10 shadow-lg">
