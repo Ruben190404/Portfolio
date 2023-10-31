@@ -15,14 +15,14 @@
                     <img src="images/lnkdin.png" class="h-auto w-12 mr-4" alt="linkedin logo">
                     <a href="https://www.linkedin.com/in/ruben-luteijn-52471b220/">https://www.linkedin.com/rluteijn</a>
                 </div>
-                <div class="text-xxs sm:text-xl lg:text-xl lg:mb-6 flex flex-row items-center">
-                    <img src="images/phone.png" class="h-auto w-12 mr-4" alt="phone image">
-                    +033 6 12390947
-                </div>
-                <div class="text-xxs sm:text-xl lg:text-xl lg:mb-6 flex flex-row items-center">
-                    <img src="images/mail.png" class="h-auto w-12 mr-4" alt="mail icon">
-                    <a href="mailto: luteijnruben@gmail.com">luteijnruben@gmail.com</a>
-                </div>
+{{--                <div class="text-xxs sm:text-xl lg:text-xl lg:mb-6 flex flex-row items-center">--}}
+{{--                    <img src="images/phone.png" class="h-auto w-12 mr-4" alt="phone image">--}}
+{{--                    +033 6 12390947--}}
+{{--                </div>--}}
+{{--                <div class="text-xxs sm:text-xl lg:text-xl lg:mb-6 flex flex-row items-center">--}}
+{{--                    <img src="images/mail.png" class="h-auto w-12 mr-4" alt="mail icon">--}}
+{{--                    <a href="mailto: luteijnruben@gmail.com">luteijnruben@gmail.com</a>--}}
+{{--                </div>--}}
             </div>
         </section>
         <section class="bg-white shadow-lg w-4/6 mx-auto h-full p-6 lg:mx-8">
