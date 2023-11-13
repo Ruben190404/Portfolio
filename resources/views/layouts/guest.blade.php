@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="color-scheme" content="light only">
-{{--    <meta name="google-adsense-account" content="ca-pub-6976595205761422">--}}
+    <meta name="google-adsense-account" content="ca-pub-6976595205761422">
     <meta name="keywords" content="Portfolio, Ruben Luteijn, HTML, CSS, PHP, JavaScript">
     <meta name="description" content="Portfolio of Ruben Luteijn">
     <title>Portfolio</title>
