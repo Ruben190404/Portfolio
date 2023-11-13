@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="color-scheme" content="light only">
-    <meta name="google-adsense-account" content="ca-pub-6976595205761422">
+{{--    <meta name="google-adsense-account" content="ca-pub-6976595205761422">--}}
     <meta name="keywords" content="Portfolio, Ruben Luteijn, HTML, CSS, PHP, JavaScript">
     <meta name="description" content="Portfolio of Ruben Luteijn">
     <title>Portfolio</title>
@@ -35,8 +35,9 @@
 
         gtag('config', 'G-793BX4HXMR');
     </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6976595205761422"
-            crossorigin="anonymous"></script>
+
+{{--    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6976595205761422"--}}
+{{--            crossorigin="anonymous"></script>--}}
 
 </head>
 <body class="flex flex-col h-screen bg-gray-50 font-sans" style="font-family: 'Rubik', sans-serif;">
