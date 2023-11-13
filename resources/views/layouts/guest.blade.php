@@ -36,8 +36,8 @@
         gtag('config', 'G-793BX4HXMR');
     </script>
 
-{{--    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6976595205761422"--}}
-{{--            crossorigin="anonymous"></script>--}}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6976595205761422"
+            crossorigin="anonymous"></script>
 
 </head>
 <body class="flex flex-col h-screen bg-gray-50 font-sans" style="font-family: 'Rubik', sans-serif;">
