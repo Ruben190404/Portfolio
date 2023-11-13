@@ -1,6 +1,6 @@
 <x-guest-layout>
     <h1 class="text-5xl sm:text-6xl md:text-7xl flex justify-center mt-6 font-monoton">
-        Projecten
+        Projecten heel niet
     </h1>
     <section class="mx-auto w-40">
         <button type="button" id="toggleFilter" class="flex flex-row rounded border p-1 w-full border-black mt-8">
